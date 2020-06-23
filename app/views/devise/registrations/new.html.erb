@@ -21,6 +21,11 @@
     </div>
 
     <div class="mb-6">
+      <%= f.label :location, class:"label" %>
+      <%= f.text_field :location, class:"input" %>
+    </div>
+
+    <div class="mb-6">
       <div class="flex">
         <%= f.label :password, class: "label" %>
         <% if @minimum_password_length %>
@@ -33,6 +38,11 @@
     <div class="mb-6">
       <%= f.label :password_confirmation, class:"label" %>
       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "input" %>
+    </div>
+
+    <div class="mb-6">
+      <%= f.check_box :terms, class: "mr-2" %>
+      <%= f.label :terms, "I agree to the terms and conditions"%>
     </div>
 
     <div class="mb-6">
